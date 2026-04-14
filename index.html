@@ -24,17 +24,11 @@
 
 <!-- HERO -->
 <section id="home" class="hero">
+    <div id="particles-js"></div>
     <div class="hero-text">
-        <div id="particles-js"></div>
-
-<div class="content">
-    <h1>Welcome to My Site</h1>
-</div>
-
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <h1>Hi, I'm <span>Akena Nicholas , and my friends call me Chris or James</span></h1>
+        <h1>Hi, I'm <span>Akena Nicholas, and my friends call me Chris or James</span></h1>
         <h3>Data Scientist & Frontend Developer</h3>
-        <p>Data tells the story; I build the stage. I combine rigorous statistical analysis with modern frontend engineering to create immersive, data-driven applications. By merging the analytical depth of a Data Scientist with the creative precision of a Frontend Developer, I deliver end-to-end solutions—from training machine learning models to deploying the elegant interfaces that bring them to life.</p>
+        <p>Data tells the story; I build the stage. I combine rigorous statistical analysis with modern frontend engineering to create immersive, data-driven applications...</p>
         <button onclick="scrollToSection('projects')">View Projects</button>
     </div>
 </section>
@@ -43,18 +37,13 @@
 <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-        I sit at the intersection of data intelligence and user experience. While many can analyze data and others can build interfaces, I specialize in the rare space where the two meet: engineering high-performance web applications that make complex datasets accessible and actionable.
-
-My journey began with a fascination for patterns. As I progressed in Data Science, I realized that the most powerful insights remain silent if they aren't communicated effectively. This led me to master Frontend Development, allowing me to build the very tools dashboards, interactive visualizations, and AI-driven platforms that bring analytical findings to life.
-
-When I’m not deep-seated in a Jupyter Notebook or debugging CSS, you can find me navigating the complexities of a chess board or diving deeper into Python to automate the world around me. I’m always looking to collaborate on projects that push the boundaries of data-driven design. Let’s build something intelligent together
+        I sit at the intersection of data intelligence and user experience...
     </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="skills">
     <h2>Skills</h2>
-
     <div class="skills-container">
         <div class="skill-box">
             <h3>Data Science</h3>
@@ -65,7 +54,6 @@ When I’m not deep-seated in a Jupyter Notebook or debugging CSS, you can find 
                 <li>Data Visualization</li>
             </ul>
         </div>
-
         <div class="skill-box">
             <h3>Frontend</h3>
             <ul>
@@ -81,18 +69,15 @@ When I’m not deep-seated in a Jupyter Notebook or debugging CSS, you can find 
 <!-- PROJECTS -->
 <section id="projects" class="projects">
     <h2>Projects</h2>
-
     <div class="project-container">
         <div class="project-card">
             <h3>ML Prediction App</h3>
             <p>A machine learning app predicting trends using real data.</p>
         </div>
-
         <div class="project-card">
             <h3>Dashboard UI</h3>
             <p>Interactive frontend dashboard for analytics visualization.</p>
         </div>
-
         <div class="project-card">
             <h3>Portfolio Website</h3>
             <p>Responsive personal website built with modern UI design.</p>
@@ -113,8 +98,46 @@ When I’m not deep-seated in a Jupyter Notebook or debugging CSS, you can find 
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Akena nicholasNicholas | All Rights Reserved</p>
+    <p>© 2026 Akena Nicholas | All Rights Reserved</p>
 </footer>
+
+<!-- Load particles.js library -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- Initialize particles with your configuration -->
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 80 },
+    "color": { "value": "#a6c1ee" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.5 },
+    "size": { "value": 3 },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#a6c1ee",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": true, "mode": "grab" },
+      "onclick": { "enable": true, "mode": "push" }
+    }
+  },
+  "retina_detect": true
+});
+</script>
 
 <script src="script.js"></script>
 </body>
