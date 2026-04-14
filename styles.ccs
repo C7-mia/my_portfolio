@@ -6,18 +6,36 @@
 }
 
 body {
-    background: #0f172a;
-    color: #fff;
+    background: #0b1020;
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* =========================
+   PARTICLES BACKGROUND FIX
+========================= */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(circle at top, #0f172a, #050816);
+}
+
+/* =========================
+   NAVBAR (GLASS EFFECT)
+========================= */
 header {
     position: fixed;
     width: 100%;
     top: 0;
-    background: #020617;
-    padding: 15px 50px;
     z-index: 1000;
+    background: rgba(2, 6, 23, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 15px 50px;
 }
 
 nav {
@@ -29,30 +47,47 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
+    gap: 20px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 500;
 }
 
 nav a:hover {
     color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
 }
 
-/* HERO */
+/* =========================
+   HERO SECTION (AI STYLE)
+========================= */
 .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(135deg, #020617, #1e293b);
+    padding: 0 20px;
+}
+
+.hero-text {
+    max-width: 800px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+    color: #94a3b8;
+    margin-bottom: 15px;
 }
 
 .hero span {
@@ -61,84 +96,164 @@ nav a:hover {
 
 .hero button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    background: #38bdf8;
+    background: linear-gradient(135deg, #38bdf8, #60a5fa);
     color: #000;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* SECTIONS */
+.hero button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 section {
-    padding: 100px 50px;
+    padding: 120px 50px;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 
-/* SKILLS */
+/* =========================
+   SKILLS (GLASS CARDS)
+========================= */
 .skills-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .skill-box {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    margin: 10px;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    width: 260px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
 }
 
-/* PROJECTS */
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+/* =========================
+   PROJECTS
+========================= */
 .project-container {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .project-card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    width: 270px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: 0.3s;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT FORM
+========================= */
 .contact form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
+    gap: 10px;
 }
 
-.contact input, .contact textarea {
-    margin-bottom: 10px;
-    padding: 10px;
+.contact input,
+.contact textarea {
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
 }
 
 .contact button {
-    background: #38bdf8;
+    background: linear-gradient(135deg, #38bdf8, #60a5fa);
     border: none;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* FOOTER */
+.contact button:hover {
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #020617;
+    padding: 25px;
+    background: rgba(2, 6, 23, 0.6);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .skills-container,
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
