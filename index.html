@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
+<div id="particles-js"></div>
+
 <header>
     <nav>
         <h2 class="logo">MyPortfolio</h2>
@@ -22,26 +23,20 @@
     </nav>
 </header>
 
-<!-- HERO -->
 <section id="home" class="hero">
-    <div id="particles-js"></div>
     <div class="hero-text">
-        <h1>Hi, I'm <span>Akena Nicholas, and my friends call me Chris or James</span></h1>
+        <h1>Hi, I'm <span>Akena Nicholas</span></h1>
         <h3>Data Scientist & Frontend Developer</h3>
         <p>Data tells the story; I build the stage. I combine rigorous statistical analysis with modern frontend engineering to create immersive, data-driven applications...</p>
         <button onclick="scrollToSection('projects')">View Projects</button>
     </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="about">
     <h2>About Me</h2>
-    <p>
-        I sit at the intersection of data intelligence and user experience...
-    </p>
+    <p>I sit at the intersection of data intelligence and user experience...</p>
 </section>
 
-<!-- SKILLS -->
 <section id="skills" class="skills">
     <h2>Skills</h2>
     <div class="skills-container">
@@ -66,7 +61,6 @@
     </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-container">
@@ -85,26 +79,22 @@
     </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <form id="contactForm">
-        <input type="text" placeholder="Akena Nicholas" required>
-        <input type="email" placeholder="akidirita4@gmail.com" required>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
         <textarea placeholder="Message" required></textarea>
         <button type="submit">Send Message</button>
     </form>
 </section>
 
-<!-- FOOTER -->
 <footer>
     <p>© 2026 Akena Nicholas | All Rights Reserved</p>
 </footer>
 
-<!-- Load particles.js library -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-<!-- Initialize particles with your configuration -->
 <script>
 particlesJS("particles-js", {
   "particles": {
