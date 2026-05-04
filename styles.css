@@ -40,11 +40,11 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background: rgba(2, 6, 23, 0.75);
+    background: rgba(2, 6, 23, 0.85); /* Slightly higher opacity for readability */
     backdrop-filter: blur(12px);
     padding: 18px 60px;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 nav {
@@ -68,7 +68,7 @@ nav a {
 
 nav a:hover {
     color: #38bdf8;
-    text-shadow: 0 0 10px #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
 }
 
 /* =========================
@@ -98,8 +98,9 @@ nav a:hover {
 }
 
 .hero-text p {
-    color: #94a3b8;
-    margin-top: 10px;
+    color: #cbd5e1; /* Increased contrast from #94a3b8 for better readability */
+    font-size: 1.1rem;
+    margin-top: 15px;
 }
 
 .hero button {
@@ -177,7 +178,6 @@ h2 {
     opacity: 1;
 }
 
-/* Hover effect */
 .skill-box:hover,
 .project-card:hover {
     transform: translateY(-12px) scale(1.02);
@@ -200,10 +200,19 @@ h2 {
 .contact textarea {
     padding: 12px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid transparent; /* Added for smoother focus transition */
     outline: none;
     background: rgba(255, 255, 255, 0.05);
     color: white;
+    transition: 0.3s;
+}
+
+/* Accessibility: Added Focus State */
+.contact input:focus,
+.contact textarea:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
 }
 
 .contact button {
@@ -218,6 +227,7 @@ h2 {
 
 .contact button:hover {
     box-shadow: 0 0 15px #38bdf8;
+    transform: translateY(-2px);
 }
 
 /* =========================
@@ -265,5 +275,11 @@ footer {
     .project-container {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .skill-box,
+    .project-card {
+        width: 100%;
+        max-width: 350px;
     }
 }
