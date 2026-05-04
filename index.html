@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <title>Akena Nicholas | Data Scientist & Frontend Developer</title>
-    <meta name="description" content="Portfolio of Akena Nicholas - Data Scientist & Frontend Developer building intelligent systems and modern web apps.">
+    <title>Akena Chris Nicholas | Portfolio</title>
+    <meta name="description" content="Portfolio of Akena Chris Nicholas - Data Scientist, ML Engineer & Frontend Developer specializing in AI solutions.">
 
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -19,13 +21,12 @@
 <!-- NAVBAR -->
 <header>
     <nav>
-        <h2 class="logo">Akena.dev</h2>
+        <h2 class="logo">Akena<span>.dev</span></h2>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#featured">Featured</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -34,159 +35,117 @@
 <!-- HERO -->
 <section id="home" class="hero">
     <div class="hero-text">
-        <h1>Hi, I'm <span>Akena Nicholas</span></h1>
-        <h3>Data Scientist & Frontend Developer</h3>
+        <p class="intro-greeting">Innovating through Data & Code</p>
+        <h1>Hi, I'm <span>Akena Chris Nicholas</span></h1>
+        <h3>Data Scientist • ML Engineer • Frontend Developer</h3>
 
         <p>
-            I build intelligent systems and interactive web applications using
-            machine learning and modern frontend technologies.
+            Computer Science student at <strong>UoPeople</strong> with a focus on building 
+            intelligent, data-driven systems. I bridge the gap between complex backend 
+            logic and seamless user experiences.
         </p>
 
-        <button onclick="scrollToSection('featured')">View My Work</button>
-    </div>
-</section>
-
-<!-- FEATURED PROJECT -->
-<section id="featured">
-    <h2>🔥 Featured Project</h2>
-
-    <div class="project-card" style="max-width:600px;margin:auto;">
-        <h3>AI Data Analytics Dashboard</h3>
-
-        <p>
-            Built a real-time analytics dashboard processing 50K+ records.
-            Achieved 92% prediction accuracy using machine learning.
-        </p>
-
-        <br>
-
-        <a href="#" target="_blank">🌐 Live Demo</a> |
-        <a href="#" target="_blank">💻 GitHub</a>
+        <div class="hero-btns">
+            <button onclick="scrollToSection('projects')">Explore My Work</button>
+            <button class="secondary-btn" onclick="scrollToSection('contact')">Get In Touch</button>
+        </div>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="projects">
-    <h2>Projects</h2>
-
+    <h2>Impactful Projects</h2>
     <div class="project-container">
-
+        <!-- Landslide Risk App (Based on your background) -->
         <div class="project-card">
-            <h3>ML Prediction App</h3>
-            <p>Predicted outcomes using regression models.</p>
-            <a href="#">GitHub</a>
+            <div class="tag">AI & Ecology</div>
+            <h3>Landslide Risk Analyzer</h3>
+            <p>A specialized ML tool for risk assessment in the Elgon Highlands using localized ecological data.</p>
+            <a href="#" class="project-link">View Details</a>
         </div>
 
         <div class="project-card">
-            <h3>Dashboard UI</h3>
-            <p>Interactive analytics UI with charts.</p>
-            <a href="#">Live Demo</a>
+            <div class="tag">Data Analytics</div>
+            <h3>Hacker Drone v2</h3>
+            <p>Developed interactive simulation logic using Python Arcade and randomized algorithms.</p>
+            <a href="#" class="project-link">GitHub Repo</a>
         </div>
 
         <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Modern responsive personal site.</p>
-            <a href="#">GitHub</a>
+            <div class="tag">Management</div>
+            <h3>Student Record System</h3>
+            <p>A robust Java-based management system implementing encapsulation and static memory handling.</p>
+            <a href="#" class="project-link">Live Demo</a>
         </div>
-
     </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="skills">
-    <h2>Skills</h2>
-
+    <h2>Technical Expertise</h2>
     <div class="skills-container">
         <div class="skill-box">
-            <h3>Data Science</h3>
+            <i class="fas fa-brain"></i>
+            <h3>AI & Data Science</h3>
             <ul>
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>Data Analysis</li>
+                <li>Python & Machine Learning</li>
+                <li>Predictive Modeling</li>
+                <li>Data Cleaning (Pandas/NumPy)</li>
             </ul>
         </div>
 
         <div class="skill-box">
-            <h3>Frontend</h3>
+            <i class="fas fa-code"></i>
+            <h3>Engineering</h3>
             <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>React</li>
-                <li>UI/UX</li>
+                <li>Frontend (React, JS, CSS3)</li>
+                <li>Java & Statistics</li>
+                <li>AWS Cloud Infrastructure</li>
             </ul>
         </div>
     </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE & CERTS -->
 <section id="experience">
-    <h2>Experience</h2>
-
-    <div class="timeline">
-        <p><strong>2025:</strong> Data Science Intern – Built ML models</p>
-        <p><strong>2024:</strong> Developed analytics dashboard</p>
-        <p><strong>2023:</strong> Started frontend development</p>
+    <h2>Professional Foundations</h2>
+    <div class="cert-grid">
+        <div class="cert-item">
+            <h4>AWS Certified Cloud Practitioner</h4>
+            <p>Udacity AWS Scholarship Recipient</p>
+        </div>
+        <div class="cert-item">
+            <h4>AI Career Essentials (AiCE)</h4>
+            <p>African Leadership X (ALX)</p>
+        </div>
+        <div class="cert-item">
+            <h4>Professional Foundation Certificate</h4>
+            <p>ALX • Python Track Mentor</p>
+        </div>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-
+    <h2>Let's Build Something Great</h2>
     <form id="contactForm">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Message" required></textarea>
+        <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
         <button type="submit">Send Message</button>
     </form>
-
-    <br>
-
-    <!-- CV DOWNLOAD -->
-    <div style="text-align:center;">
-        <a href="cv.pdf" download style="color:#38bdf8; font-weight:bold;">
-            ⬇ Download My CV
+    <div class="cv-download">
+        <a href="cv.pdf" download>
+            <i class="fas fa-download"></i> Download My Professional CV
         </a>
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 Akena Nicholas | All Rights Reserved</p>
+    <p>© 2026 Akena Chris Nicholas | Built with Passion & Logic</p>
 </footer>
 
-<!-- PARTICLES -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-<script>
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 80 },
-    color: { value: "#38bdf8" },
-    shape: { type: "circle" },
-    opacity: { value: 0.5 },
-    size: { value: 3 },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#38bdf8",
-      opacity: 0.4,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 2
-    }
-  },
-  interactivity: {
-    events: {
-      onhover: { enable: true, mode: "grab" },
-      onclick: { enable: true, mode: "push" }
-    }
-  },
-  retina_detect: true
-});
-</script>
-
 <script src="script.js"></script>
 
 </body>
