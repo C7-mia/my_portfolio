@@ -1,3 +1,4 @@
+// Smooth Scroll Function
 function scrollToSection(id) {
     const element = document.getElementById(id);
     if (element) {
@@ -6,11 +7,14 @@ function scrollToSection(id) {
 }
 
 // Contact form handler
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Thank you, Chris! Your message has been sent successfully.");
-    this.reset();
-});
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+    contactForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Thank you, Chris! Your message has been sent successfully.");
+        this.reset();
+    });
+}
 
 // Particles Configuration
 particlesJS("particles-js", {
@@ -25,7 +29,11 @@ particlesJS("particles-js", {
     },
     "interactivity": {
         "detect_on": "canvas",
-        "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }
+        "events": { 
+            "onhover": { "enable": true, "mode": "grab" }, 
+            "onclick": { "enable": true, "mode": "push" }, 
+            "resize": true 
+        }
     },
     "retina_detect": true
 });
