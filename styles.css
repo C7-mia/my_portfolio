@@ -79,16 +79,16 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left; /* Changed to left for side-by-side layout */
+    text-align: left;
     padding: 0 20px;
-    gap: 50px; /* Space between your image and words */
+    gap: 50px;
 }
 
-/* Styling for your image frame */
 .hero img {
     width: 320px;
     height: 320px;
     object-fit: cover;
+    flex-shrink: 0; /* Ensures image does not get squashed */
     border-radius: 20px;
     border: 3px solid rgba(56, 189, 248, 0.3);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -174,7 +174,6 @@ h2 {
     overflow: hidden;
 }
 
-/* Glow effect */
 .skill-box::before,
 .project-card::before {
     content: "";
@@ -219,7 +218,6 @@ h2 {
     transition: 0.3s;
 }
 
-/* Accessibility: Added Focus State */
 .contact input:focus,
 .contact textarea:focus {
     background: rgba(255, 255, 255, 0.1);
@@ -273,6 +271,13 @@ footer {
 @media (max-width: 768px) {
     header {
         padding: 15px 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding-top: 50px;
+        text-align: center;
     }
 
     .hero-text h1 {
