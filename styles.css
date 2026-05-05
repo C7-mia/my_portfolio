@@ -40,7 +40,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background: rgba(2, 6, 23, 0.85); /* Slightly higher opacity for readability */
+    background: rgba(2, 6, 23, 0.85); 
     backdrop-filter: blur(12px);
     padding: 18px 60px;
     z-index: 1000;
@@ -79,12 +79,24 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left; /* Changed to left for side-by-side layout */
     padding: 0 20px;
+    gap: 50px; /* Space between your image and words */
+}
+
+/* Styling for your image frame */
+.hero img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    animation: fadeInUp 1s ease;
 }
 
 .hero-text {
-    max-width: 800px;
+    max-width: 600px;
     animation: fadeInUp 1s ease;
 }
 
@@ -98,7 +110,7 @@ nav a:hover {
 }
 
 .hero-text p {
-    color: #cbd5e1; /* Increased contrast from #94a3b8 for better readability */
+    color: #cbd5e1; 
     font-size: 1.1rem;
     margin-top: 15px;
 }
@@ -200,7 +212,7 @@ h2 {
 .contact textarea {
     padding: 12px;
     border-radius: 8px;
-    border: 1px solid transparent; /* Added for smoother focus transition */
+    border: 1px solid transparent; 
     outline: none;
     background: rgba(255, 255, 255, 0.05);
     color: white;
